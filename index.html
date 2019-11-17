@@ -18,18 +18,83 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link 
+    rel="stylesheet" 
+    href="style.css" 
+    />
+    
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body id="bootstrap-overrides">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+
     <div class="container">
-      <!-- Timeblocks go here -->
+
+        <form id="nineSlot" class="timeSlot">
+          <div class="form-row">
+            <label for="nineTextArea" class="col-form-label">9AM </label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="nineTextArea"></textarea>
+            </div>
+            <button type="submit" class="saveBtn"><i class="fas fa-lock"></i></button>
+          </div>
+        </form>
+
+        <form id="tenSlot" class="timeSlot">
+            <div class="form-row">
+              <label for="tenTextArea" class="col-form-label">10AM</label>
+              <div class="col-sm-8">
+                <textarea class="form-control" id="tenTextArea"></textarea>
+              </div>
+              <button type="submit" class="saveBtn"><i class="fas fa-lock"></i></button>
+            </div>
+        </form>
+          
+        <form id="elevenSlot" class="timeSlot">
+          <div class="form-row">
+            <label for="elevenTextArea" class="col-form-label">11AM</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="elevenTextArea"></textarea>
+            </div>
+            <button type="submit" class="saveBtn"><i class="fas fa-lock"></i></button>
+          </div>
+        </form>
+
+        <form id="twelveSlot" class="timeSlot">
+          <div class="form-row">
+            <label for="twelveTextArea" class="col-form-label">12PM</label>
+            <div class="col-sm-8">
+              <textarea class="form-control" id="twelveTextArea"></textarea>
+            </div>
+            <button type="submit" class="saveBtn"><i class="fas fa-lock"></i></button>
+          </div>
+        </form>
+
+        <div id="oneSlot" class="timeSlot row">
+
+        </div>
+
+        <div id="twoSlot" class="timeSlot row">
+
+        </div>
+
+        <div id="threeSlot" class="timeSlot row">
+
+        </div>
+
+        <div id="fourSlot" class="timeSlot row">
+
+        </div>
+
+        <div id="fiveSlot" class="timeSlot row">
+            
+        </div>
+
     </div>
 
     <script src="main.js"></script>

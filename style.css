@@ -11,6 +11,7 @@ body {
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
+    overflow: auto;
   }
   
   .jumbotron {
@@ -33,7 +34,7 @@ body {
   .row {
     white-space: pre-wrap;
     height: 80px;
-    border-top: 1px solid white;;
+    border-top: 1px solid white;
   }
   
   .hour {
@@ -68,4 +69,17 @@ body {
   .saveBtn i:hover {
     font-size: 20px;
     transition: all .3s ease-in-out;
-  }  
+  }
+
+  #bootstrap-overrides .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  
