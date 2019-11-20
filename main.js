@@ -7,9 +7,10 @@ $(document).ready(function() {
     console.log(now)
 
     $(".saveBtn").click(function( event ) {
-        event.preventDefault()
+        event.preventDefault();
+        textStorage();
     });
-    
+
     function textStorage() {
         $()
     }
