@@ -6,6 +6,11 @@ $(document).ready(function() {
     };
     //console.log(now)
 
+    populateTextAreas();
+    function populateTextAreas(){
+        
+    }
+    
     $(".saveBtn").click(function( event ){
         event.preventDefault();
         localStorage.setItem($(this).siblings("label").text(), $(this).siblings("textarea").val())
