@@ -8,8 +8,29 @@ $(document).ready(function() {
 
     populateTextAreas();
     function populateTextAreas(){
-        
+        let nineTimeText = localStorage.getItem("9AM");
+        let tenTimeText = localStorage.getItem("10AM");
+        let elevenTimeText = localStorage.getItem("11AM");
+        let twelveTimeText = localStorage.getItem("11AM");
+        let oneTimeText = localStorage.getItem("11AM");
+        let twoTimeText = localStorage.getItem("11AM");
+        let threeTimeText = localStorage.getItem("11AM");
+        let fourTimeText = localStorage.getItem("11AM");
+        let fiveTimeText = localStorage.getItem("11AM");
+
+        $("#nineTextArea").val(nineTimeText);
+        $("#tenTextArea").val(tenTimeText);
+        $("#elevenTextArea").val(elevenTimeText);
+        $("#twelveTextArea").val(twelveTimeText);
+        $("#oneTextArea").val(oneTimeText);
+        $("#twoTextArea").val(twoTimeText);
+        $("#threeTextArea").val(threeTimeText);
+        $("#fourTextArea").val(fourTimeText);
+        $("#fiveTextArea").val(fiveTimeText);
     }
+    
+
+    
     
     $(".saveBtn").click(function( event ){
         event.preventDefault();
@@ -34,6 +55,7 @@ $(document).ready(function() {
     //let timeArray = [nineTime, tenTime, elevenTime, twelveTime, oneTime, twoTime, threeTime, fourTime, fiveTime];
 
     //The below code section calls the moment function and compares it to the predetermined hour slot variables, changing the styling of the text areas according to whether the hour slot is in the past, present, or future.
+    //FYI 3.6e+6 is one hour
     if (moment().diff(nineTime) > (3.6e+6)) {
         $("#nineTextArea").addClass("past");
     } else if(moment().diff(nineTime) > 1 && moment().diff(nineTime) < (3.6e+6)) {
