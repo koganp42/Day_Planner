@@ -11,12 +11,12 @@ $(document).ready(function() {
         let nineTimeText = localStorage.getItem("9AM");
         let tenTimeText = localStorage.getItem("10AM");
         let elevenTimeText = localStorage.getItem("11AM");
-        let twelveTimeText = localStorage.getItem("11AM");
-        let oneTimeText = localStorage.getItem("11AM");
-        let twoTimeText = localStorage.getItem("11AM");
-        let threeTimeText = localStorage.getItem("11AM");
-        let fourTimeText = localStorage.getItem("11AM");
-        let fiveTimeText = localStorage.getItem("11AM");
+        let twelveTimeText = localStorage.getItem("12AM");
+        let oneTimeText = localStorage.getItem("1PM");
+        let twoTimeText = localStorage.getItem("2PM");
+        let threeTimeText = localStorage.getItem("3PM");
+        let fourTimeText = localStorage.getItem("4PM");
+        let fiveTimeText = localStorage.getItem("5PM");
 
         $("#nineTextArea").val(nineTimeText);
         $("#tenTextArea").val(tenTimeText);
